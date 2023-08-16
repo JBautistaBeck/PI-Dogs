@@ -1,0 +1,32 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #388e3c;
+    border: 1px solid #dce775;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: trnsform 0.25s ease-out;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;  /*Hereda el color del padre */
+}
+
+.card-text {
+    color: #000000; 
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,45 @@
+.cards-list {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+  
+.card {
+    width: 220px; 
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+  
+.pagination button:hover {
+    background-color: #1f252c;
+}
+
+.counter-pages {
+    background-color: #388e3c;
+    color: #fff;
+    padding: 6.8px 20px;
+    border-radius: 5px;
+}
