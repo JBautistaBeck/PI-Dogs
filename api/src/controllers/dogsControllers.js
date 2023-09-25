@@ -84,7 +84,7 @@ const getDetailByIdController = async (id, source) => {
 }
 
 
-const createDogController = async (image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperamentsName) => {
+const createDogController = async (image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperamentsName, owner) => {
 
     const allDogs = await getAllDogsController()
     
@@ -100,7 +100,8 @@ const createDogController = async (image, name, minHeight, maxHeight, minWeight,
         maxHeight,
         minWeight,
         maxWeight,
-        lifeSpan
+        lifeSpan,
+        owner
     });
 
 

@@ -25,6 +25,7 @@ function Form() {
     maxWeight:"",
     lifeSpan:"",
     temperaments:[],
+    owner:""
   })
 
   const [error, setError] = useState({//lo que escriba en estas comillas aparece desde el principio
@@ -72,6 +73,7 @@ function Form() {
       maxWeight: "",
       lifeSpan: "",
       temperaments: [],
+      owner:""
     })
     alert("Dog created successfully!");
   })
@@ -140,6 +142,11 @@ function Form() {
           <label>Life Span:</label>
           <input name='lifeSpan' onChange={handleChange}/>
           <span className='error-message'>{error.lifeSpan}</span>
+        </div>
+
+        <div>
+          <label>Owner:</label>
+          <input name='owner' onChange={handleChange}/>
         </div>
 
         {/* Seleccionar Temperamentos */}

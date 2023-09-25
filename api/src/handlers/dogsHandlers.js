@@ -36,14 +36,14 @@ const getDogsDetailByIdHandler = async (req, res) => {
 
 
 const postDogsHandler = async (req, res) => {
-    const {image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperaments } = req.body
+    const {image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperaments, owner } = req.body
 
     
     const temperamentsNames = temperaments.map((temp) => temp.name )
     
 
     try {
-        let newDog = await createDogController(image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperamentsNames);
+        let newDog = await createDogController(image, name, minHeight, maxHeight, minWeight, maxWeight, lifeSpan, temperamentsNames, owner);
 
 
 

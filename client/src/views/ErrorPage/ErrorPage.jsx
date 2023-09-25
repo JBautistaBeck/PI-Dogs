@@ -1,9 +1,11 @@
 import './ErrorPage.css';
+import errorPage from "../../utils/error-Page.png"
 
 function ErrorPage() {
   return (
     <div>
-      <h1>Este es el componente de ErrorPage</h1>
+      <h1>Error on your endpoint, please go back and try again</h1>
+      <img src={errorPage}></img>
     </div>
   );
 }

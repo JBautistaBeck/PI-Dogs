@@ -36,22 +36,20 @@ function Cards({allDogs}) {
 
     <div>
       
-      <div className='cards-list'>
-
-        {dogsToShow?.map((dog)=> ( <Card dog={dog}/> ))}
-        
-        
-      </div>
-
-      
       <div className="pagination">
         <button onClick={prevHandler}> Prev </button>
 
-        <div className='counter-pages'> 
-          Page {currentPage} of {totalPages}
-        </div>
+          <div className='counter-pages'> 
+            Page {currentPage} of {totalPages}
+          </div>
 
         <button onClick={nextHandler}> Next  </button>
+      </div>
+
+      <div className='cards-list'>
+
+        {dogsToShow.length > 0?dogsToShow.map((dog)=> ( <Card dog={dog}/> )) : <p className='not-found'>Dog not found</p>}
+        
       </div>
       
     </div>

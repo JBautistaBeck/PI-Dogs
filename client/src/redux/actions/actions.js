@@ -11,10 +11,15 @@ export const getAllDogs = () => {
 
 export const getByName = (name) => {
     const endpoint = "http://localhost:3001/dogs?name="//"https://api.thedogapi.com/v1/breeds";
-    return async function (dispatch) {
+    try {
+          return async function (dispatch) {
         const response = await axios.get(endpoint + name)
         return dispatch({type: GET_BY_NAME, payload: response.data})
-    }  
+        } 
+    } catch (error) {
+     return alert ("Name was not found") 
+    }
+ 
 }
 
 export const getDetailById = (id) => {

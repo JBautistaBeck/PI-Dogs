@@ -43,3 +43,11 @@
     padding: 6.8px 20px;
     border-radius: 5px;
 }
+
+.not-found {
+    width: 220px; 
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #388e3c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -42,6 +42,10 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       allowNull:false
     },
+    owner:{
+      type:DataTypes.STRING,
+      defaultValue:"Libre"
+    },
     created:{//Para despues poder buscar por si es creado o de la API
       type:DataTypes.BOOLEAN,
       defaultValue: true
